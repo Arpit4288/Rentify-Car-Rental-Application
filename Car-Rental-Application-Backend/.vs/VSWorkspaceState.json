@@ -1,0 +1,9 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Data-Access-Layer",
+    "\\Data-Access-Layer\\DataContext"
+  ],
+  "SelectedNode": "\\Data-Access-Layer\\DataContext\\ApplicationDbContext.cs",
+  "PreviewInSolutionExplorer": false
+}

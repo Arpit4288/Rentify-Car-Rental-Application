@@ -1,0 +1,378 @@
+.App {
+  text-align: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body {
+  /* border: 1px solid red; */
+  height: 100vh !important;
+}
+
+#root {
+  background-color: #FFF6E0;
+  /* border: 2px solid green; */
+  height: 100vh !important;
+  overflow-x: hidden;
+  /* overflow-y: hidden; */
+}
+
+
+main {
+  min-height: 78.7%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  margin-bottom: 1.4rem;
+}
+
+.Link {
+  text-decoration: none;
+  margin-left: 15px;
+  color: #ffffff8c;
+  font-size: 1.10rem;
+  font-weight: 400;
+}
+
+.Link:hover {
+  color: #9a91918c;
+}
+
+
+
+
+
+
+.Footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #272829;
+  height: 8vh;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+footer span {
+  margin-right: 15px;
+}
+
+
+@media(max-width: 550px) {
+
+  .Footer {
+    font-size: 0.6rem;
+  }
+
+}
+
+.text-shadow {
+  text-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.box-shadow {
+  box-shadow: 0 3px 6px rgba(98, 95, 95, 0.2);
+}
+
+.box {
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  /* border: 3px solid green; */
+  border-radius: 2%;
+  min-width: 65vw;
+  max-width: 65vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-child {
+  /* border: 2px solid red; */
+  margin: 25px;
+}
+
+
+/* .button-shadow:hover {
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
+} */
+
+
+
+
+/*......................... Home Page .................................*/
+
+.home-all-cars {
+  margin-top: 5rem !important;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.card-image-container {
+  min-height: 13rem;
+  overflow: hidden;
+}
+
+.home-car-img{
+  width: 13rem;
+  height: 13rem;
+}
+
+.home-car-outer {
+  width: 23% !important;
+  min-width: 16rem;
+  padding: 0.5rem 0px 1rem 0px;
+  margin-bottom: 0.9rem;
+  margin-top: 1rem;
+
+}
+
+.home-car {
+  background-color: rgb(238, 232, 214) !important;
+}
+
+
+
+
+.no-cars-heading {
+  font-size: 4rem;
+  color: rgb(155, 89, 89);
+}
+
+.no-cars-text {
+  color: #2826268c;
+  font-size: 1.2rem;
+}
+
+.cars-empty{
+  min-height: 26.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/*  ............................................... */
+
+
+/* .............car Page */
+
+
+
+.car-page-image{
+  width: 55rem;
+  height: 17rem;
+
+}
+
+/* ................ */
+
+
+/* .......Spinner */
+
+.overlay {
+  background-color: #EFEFEF;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  top: 0px;
+  left: 0px;
+  opacity: .5;
+  filter: alpha(opacity=50);
+  display: none;
+}
+
+/* ....................... */
+
+
+/* Rental Agreements */
+
+.rental-agreements-section {
+  /* border: 2px solid red; */
+  min-width: 70vw;
+}
+
+.rental-agreements-section h1 {
+  margin-bottom: 2rem;
+}
+
+.rental-agreement-table {
+  border: 2px solid rgb(41, 39, 39);
+}
+
+
+.rental-agreement-table thead {
+  background-color: #272829;
+  color: white;
+}
+
+.rental-agreement-table>tbody tr:nth-child(even) {
+  background-color: #efdba9 !important;
+  /* Background color for even rows */
+}
+
+/* Define styles for odd rows */
+.rental-agreement-table>tbody tr:nth-child(odd) {
+  background-color: #FFF6E0 !important;
+  /* Background color for odd rows */
+}
+
+/* Add additional table styling */
+.rental-agreement-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.rental-agreement-table th, .rental-agreement-table td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.confirm-agreement {
+  color: red;
+}
+
+.edit-icon {
+  color: orange
+}
+
+.delete-icon {
+  color: rgb(192, 35, 35);
+}
+
+.confirm-agreement:hover {
+  color: green;
+}
+
+.edit-icon:hover {
+  color: blue;
+}
+
+.delete-icon:hover {
+  color: red;
+}
+
+/* ................ */
+
+
+/* rentalAgreement Page */
+
+
+.agreement-page-img-container{
+  min-height: 20rem;
+  overflow: hidden;
+}
+.agreement-page-img{
+  width: 23rem;
+  height: 20rem;
+}
+/* ..................... */
+
+/*..............Home Filter ........... */
+
+.home-filter {
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100vw !important;
+}
+
+.search-input-shadow{
+  border-radius: 10%;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* ............. */
+
+
+/* .............Stepper ................. */
+
+
+.stepper {
+  height: 6rem;
+  width: 45rem;
+}
+
+/* ..................... */
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.cursor-default {
+  cursor: default;
+}
+
+
+.hover-shadow:hover {
+  background-color: #e7ebf1;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+/* .........Spinner CSS */
+
+/* Spinner.css */
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Make the container full height of the viewport */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background overlay */
+  position: fixed; /* Fixed position to overlay everything */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999; /* Ensure it's on top of other elements */
+}
+
+.spinner-border {
+  /* Add any additional styling to the spinner here */
+}
+
+
+/* ........... */
+
+
+/* ............add car page  */
+
+.add-car-container{
+  /* border: 1px solid red; */
+}
+
+.add-car-container-child{
+  /* border: 1px solid green;
+  max-height: 30rem; */
+}
+
+.add-car-form{
+  /* border: 1px solid yellow; */
+}
+
+/* ...................... */
